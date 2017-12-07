@@ -1,21 +1,33 @@
 
-let x1;
+let r=255; let g=255; let b= 255;
+//let diameter = 25;
+let x1; let y1;
+let w; let h;
 
 function setup() {
-  createCanvas(400,5400);
-  textSize(18);
-
+  createCanvas(500,500);
+  x1 = width/2;
+  y1 = height/2;
+  w = 25;
+  h = 300;
+  background(0);
 }
 function draw()  {
-background(255);
 
-x = mouseX;
-xReverse = map(mouseX, 0, 400, 0, 200);
 
-fill(255, 0, 0);
-rect(x, 0, 10, 200);
-rect(xReverse, 200, 10, 200);
+if (mouseIsPressed) {
+  r= random(255);
+  g= random(255);
+  b= random(255);
+}
 
-text(x, x+20, 100);
-text(xReverse, xReverse+20, 300)
+
+strokeWeight(2);
+stroke(r, g, b, 120);
+noFill();
+translate(x1,y1);
+for (var i = 0; i < 40; i++) {
+ellipse(0, 0, w, h);
+rotate(PI/20);
+}
 }
