@@ -26,6 +26,6 @@ A small downsize to this design is with the spirographs being constantly drawn t
 
 How To Use
 
-Using this project is very simple simply more the mouse around the screen to start drawing spirographs both the speed at which you move the mouse and the mouses position effect the pattern to create unique designs. In addition you can right click to change the colour of the spirograph.
+Using this project is very simple simply more the mouse around the screen to start drawing spirographs both the speed at which you move the mouse and the mouses position effect the pattern to create unique designs.Moving the mouse outside of the canvas zone can create some interesting shapes aswell. In addition you can right click to change the colour of the spirograph.
 
 
